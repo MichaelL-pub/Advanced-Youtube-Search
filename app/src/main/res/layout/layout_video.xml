@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/video_layout"
+    android:paddingTop="5dp">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/thumbnail"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:text="test test test title"
+        android:textColor="#000"
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="test chanel name"
+        android:id="@+id/chanel"
+        android:textAlignment="center"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/views"
+        android:text="10,000,000,000 views"
+        android:textSize="12dp"
+        android:layout_below="@id/chanel"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10,000,000 likes"
+        android:layout_below="@id/chanel"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@id/views"
+        android:textSize="12dp"
+        android:id="@+id/likes"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playlistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/views"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Add to watchlist" />
+</RelativeLayout>
